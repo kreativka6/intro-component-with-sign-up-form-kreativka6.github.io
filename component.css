@@ -1,0 +1,184 @@
+:root{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 100%, 74%, 0.9);
+}
+
+/*main*/
+main{
+    background-image: url(images/bg-intro-desktop.png);
+    font-family: "Poppins", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+section{
+    color:azure;
+    text-align: center;
+}
+
+section h1{
+    font-size: 1.5rem;
+    padding-inline: 30px;
+}
+
+section P{
+    line-height: 1.5rem;
+    word-spacing: 0.5rem;
+}
+/* form*/
+.form{
+   display: flex;
+   flex-direction:column;
+   padding: 50px 0;
+   text-align: center;
+}
+
+.form .parag:first-child{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.form .parag:first-child span{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+form{ 
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    padding: 4%;
+    border-radius: 2%;
+    box-shadow: 0px 5px 0px rgba(66, 66, 78, 0.3) ;
+}
+.input_group{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.input_group p{
+    max-width: 100%;
+    color: hsl(0, 100%, 74%) ;
+    font-size: 0.6rem;
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic;
+    visibility: hidden;
+    margin-bottom: 5px;
+}
+
+.input_group i{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.parag{
+    font-size: 0.7rem;
+    padding: 3%;
+    color: hsl(249, 10%, 26%);
+    text-align: center;
+}
+.parag:first-child{
+    background-color: hsl(249, 73%, 58%) ;
+    color:azure;
+    text-align: center;
+    margin-bottom: 6%;
+    padding: 8%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px rgba(66, 66, 78, 0.3) ;
+}
+
+.parag span:first-child{
+    font-weight:600;
+}
+
+.parag:last-child span{
+    color: hsl(0, 100%, 74%) ;
+    font-weight:600;
+}
+
+input{
+    width: 90%;
+    color: hsl(249, 73%, 58%) ;
+    margin: 2%;
+    padding: 3%;
+    font-weight: 600;
+    border-radius: 4px;
+    border: solid 1px hsl(246, 25%, 77%);
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+/*submit button*/
+
+#submit{
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0px 3px 0px hsla(154, 59%, 51%, 0.5) ;
+    margin: 3%;
+    padding: 5%;
+    font-weight: 600;
+    border-radius: 4px;
+    color:azure;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+/*footer*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    cursor: pointer;
+    }
+
+@media (min-width: 640px){
+main{
+    padding: 0;
+}
+
+    section{
+        width: 38%;
+        padding: 120px;
+        text-align: left;
+    }
+
+    section h1{
+        font-size: 3rem;
+        padding-inline: 0px;
+    }
+
+    .form{
+        text-align: left;
+    }
+
+    .parag{
+        padding: 3%;
+    }
+
+    .parag:first-child{
+        padding: 3%;
+    }
+
+    .form .parag:first-child{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    
+
+    }
+ 
